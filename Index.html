@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Loop</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
+    font-family: Arial, sans-serif;
+    color: #000000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.message {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 80px;
+}
+
+.cta-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    white-space: nowrap;
+}
+
+.cta-text {
+    font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    color: #00CC00;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.arrow {
+    font-size: 5rem;
+    color: #CC0000;
+    display: inline-block;
+    line-height: 1;
+}
+
+.price {
+    color: #FF4500;
+}
+
+.underline {
+    border-bottom: 2px solid #CC0000;
+    display: inline-block;
+    padding-bottom: 2px;
+}
+
+.button {
+    display: inline-block;
+    background: #FFFF99;
+    color: #00CC00;
+    font-size: 3.5rem;
+    font-weight: 900;
+    padding: 20px 50px;
+    text-decoration: none;
+    letter-spacing: 0.08em;
+    border: 4px solid #00CC00;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #FFFF66;
+}
+
+@media (max-width: 768px) {
+    .message {
+        font-size: 1rem;
+        margin-bottom: 60px;
+    }
+    
+    .cta-text {
+        font-size: 2rem;
+    }
+    
+    .arrow {
+        font-size: 2.5rem;
+    }
+    
+    .button {
+        font-size: 2rem;
+        padding: 15px 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .message {
+        font-size: 0.9rem;
+        margin-bottom: 50px;
+    }
+    
+    .cta-text {
+        font-size: 1.5rem;
+    }
+    
+    .arrow {
+        font-size: 2rem;
+    }
+    
+    .button {
+        font-size: 1.5rem;
+        padding: 12px 30px;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="content">
+    <div class="message">
+        You've bought the thing. Watched the videos. Tried to make it work.<br><br>
+        And here you are again, looking.<br><br>
+        <span class="price">This is $2.<br>
+        It explains why you keep doing this.</span><br><br>
+        Research. Citations. Links you can click.<br>
+        <span class="underline">Don't take my word for it — check it yourself.</span>
+    </div>
+
+    <div class="cta-section">
+        <span class="cta-text">IT ALL</span>
+        <span class="arrow">→</span>
+        <a href="The-Loop-Why-You-Keep-Buying-Shit-That-Doesnt-Work.docx" class="button" download>STARTS HERE</a>
+    </div>
+</div>
+
+</body>
+</html>
